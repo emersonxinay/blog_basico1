@@ -32,3 +32,4 @@ requerimientos:
   <code> rails s
   </code>
   <br>
+  <a>https://cosmixy-blog.herokuapp.com/ </a>
