@@ -38,10 +38,10 @@ requerimientos:
 <h2>Deploy Fly.io  - Activo </h2>
   <a href="https://peliculas.fly.dev/">link en https://peliculas.fly.dev/ </a>
 
-  <h3>Aplicación web que sirve para registrar una nueva pelicula, lo puedes editar o eliminar, pero  a su vez tiene un buscador de todas las peliculas registradas </h3>
+  <h3>Aplicación web sirve para crear un pequeño blog, donde puedes crear y publicar un post </h3>
 
 
-  # Buscador de Pelicula con Ruby On Rails 
+  # Blog con Ruby On Rails 
 
 ### pasos para levantar en el local
 ```bash 
