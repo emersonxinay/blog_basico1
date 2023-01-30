@@ -33,3 +33,79 @@ requerimientos:
   </code>
   <br>
   <a>https://cosmixy-blog.herokuapp.com/ </a>
+
+
+<h2>Deploy Fly.io  - Activo </h2>
+  <a href="https://peliculas.fly.dev/">link en https://peliculas.fly.dev/ </a>
+
+  <h3>Aplicación web que sirve para registrar una nueva pelicula, lo puedes editar o eliminar, pero  a su vez tiene un buscador de todas las peliculas registradas </h3>
+
+
+  # Buscador de Pelicula con Ruby On Rails 
+
+### pasos para levantar en el local
+```bash 
+git clone 
+```
+
+```bash
+bundle install
+```
+```bash
+rails db:create
+```
+```bash 
+rails db:migrate
+```
+
+## Configuración para deploy en  fly.io 
+### en MAC
+### ya deberiamos tener instalado brew 
+### instalar fly en mac
+```bash 
+brew install flyctl
+``` 
+```bash 
+fly
+```
+## ahora nos registramos pero con el siguiente comando 
+
+```bash 
+fly auth signup 
+```
+### eso te llevara a una pestaña de anvegador para que te registres o sino solo aceptar el acceso si ya tienes cuenta
+
+### ahora configuramos desde consola porque el servidor de fly trabaja en linux
+```bash
+bundle lock --add-platform x86_64-linux
+```
+
+### ahora corremos nuevamente solo bundle
+
+```bash
+bundle
+```
+
+
+
+### ahora corremos para rellenar un formulario desde consola 
+
+```bash
+fly launch
+```
+### la mayoria le das enter por defecto o yes  excepto el primero que te dice nombre del proyecto 
+
+## para hacer el deploy 
+```bash 
+fly deploy 
+```
+
+## para abrir 
+```bash 
+fly open
+```
+
+## hacer comandos desde terminal de producción de fly
+```bash 
+fly ssh console -C "app/bin/rails console"
+```
